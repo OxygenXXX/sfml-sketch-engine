@@ -61,7 +61,7 @@ namespace sketch::gui
 		sf::Color shape_border_color;
 		sf::Color font_shadow_color;
 
-		uint8_t current_button_state;
+		uint8_t current_button_state = 0;
 
 		sf::Text button_text;
 

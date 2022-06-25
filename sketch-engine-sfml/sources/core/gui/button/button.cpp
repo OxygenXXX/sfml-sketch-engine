@@ -9,6 +9,8 @@ namespace sketch::gui
 
 		this->button_shape.setSize(btn_size);
 		this->button_shape.setFillColor(bg_color);
+
+		this->current_button_state = Button::Normal;
 	}
 
 	void Button::setTextColor(const sf::Color fg_color, uint8_t btn_state)
@@ -110,6 +112,8 @@ namespace sketch::gui
 					this->current_button_state = Button::Normal;
 				}
 			}
+
+			break;
 
 			default: 
 			{
