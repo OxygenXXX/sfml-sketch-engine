@@ -28,6 +28,8 @@ namespace sketch::gui
 
 		void setTextFont(const sf::Font& btn_font);
 
+		void setTextColor(const sf::Color fg_color, uint8_t btn_state);
+
 		void setTextSize(const uint16_t btn_fsize);
 
 		void setTextColor(const sf::Color fg_color);

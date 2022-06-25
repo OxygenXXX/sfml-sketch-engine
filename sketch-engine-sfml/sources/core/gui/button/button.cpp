@@ -11,6 +11,35 @@ namespace sketch::gui
 		this->button_shape.setFillColor(bg_color);
 	}
 
+	void Button::setTextColor(const sf::Color fg_color, uint8_t btn_state)
+	{
+		switch (btn_state)
+		{
+			case Button::Normal:
+			{
+				this->font_color_normal = fg_color;
+			}
+
+			break;
+
+			case Button::Hovered:
+			{
+				this->font_color_hovered = fg_color
+			}
+
+			break;
+				
+			case Button::Clicked:
+			{
+				this->font_color_clicked = fg_color;
+			}
+
+			break;
+
+			default: break;
+		};
+	}
+
 	void Button::setTextFont(const sf::Font& btn_font)
 	{
 		this->button_text.setFont(btn_font);
