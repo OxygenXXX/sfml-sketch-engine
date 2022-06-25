@@ -24,7 +24,7 @@ namespace sketch::gui
 
 			case Button::Hovered:
 			{
-				this->font_color_hovered = fg_color
+				this->font_color_hovered = fg_color;
 			}
 
 			break;
