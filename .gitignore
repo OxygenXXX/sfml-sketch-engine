@@ -1,0 +1,12 @@
+build_x86/
+build_x64/
+
+*.vcxproj.filters
+*.vcxproj.user
+
+cmake/
+doc/
+examples/
+
+.vs/
+
