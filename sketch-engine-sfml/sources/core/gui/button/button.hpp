@@ -41,6 +41,10 @@ namespace sketch::gui
 		bool isButtonHovered(sf::RenderWindow& render_window);
 
 		void displayButton(sf::RenderWindow& render_window);
+		void updateButton(sf::RenderWindow& render_window);
+
+		void eventButtonHovered();
+		void eventButtonClicked();
 
 		private:
 
@@ -56,6 +60,8 @@ namespace sketch::gui
 
 		sf::Color shape_border_color;
 		sf::Color font_shadow_color;
+
+		uint8_t current_button_state;
 
 		sf::Text button_text;
 

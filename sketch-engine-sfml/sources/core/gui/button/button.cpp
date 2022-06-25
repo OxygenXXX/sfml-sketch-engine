@@ -79,6 +79,35 @@ namespace sketch::gui
 		render_window.draw(this->button_text);
 	}
 
+	void Button::updateButton(sf::RenderWindow& render_window)
+	{
+		switch (this->current_button_state)
+		{
+			case Button::Normal:
+			{
+				
+			}
+
+			break;
+
+			case Button::Hovered:
+			{
+
+			}
+
+			break;
+
+			case Button::Clicked:
+			{
+
+			}
+
+			break;
+
+			default: break;
+		}
+	}
+
 	bool Button::isButtonHovered(sf::RenderWindow& render_window)
 	{
 		float mouse_xpos = (float)sf::Mouse::getPosition(render_window).x;
