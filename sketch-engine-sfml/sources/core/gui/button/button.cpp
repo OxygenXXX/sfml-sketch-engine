@@ -79,8 +79,47 @@ namespace sketch::gui
 		render_window.draw(this->button_text);
 	}
 
-	void Button::updateButton(sf::RenderWindow& render_window)
+	void Button::updateButton(sf::RenderWindow& render_window, sf::Event& window_event)
 	{
+		switch (window_event.type)
+		{
+			case sf::Event::MouseMoved:
+			{
+				if (this->isButtonHovered(render_window))
+				{
+					this->current_button_state = Button::Hovered;
+				}
+
+				else
+				{
+					this->current_button_state = Button::Normal;
+				}
+			}
+
+			break;
+
+			case sf::Event::MouseButtonPressed:
+			{
+				if (this->isButtonHovered(render_window))
+				{
+					this->current_button_state = Button::Clicked;
+				}
+
+				else
+				{
+					this->current_button_state = Button::Normal;
+				}
+			}
+
+			default: 
+			{
+				this->current_button_state = Button::Normal;
+			}
+
+			break;
+		};
+
+
 		switch (this->current_button_state)
 		{
 			case Button::Normal:

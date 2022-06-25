@@ -41,7 +41,7 @@ namespace sketch::gui
 		bool isButtonHovered(sf::RenderWindow& render_window);
 
 		void displayButton(sf::RenderWindow& render_window);
-		void updateButton(sf::RenderWindow& render_window);
+		void updateButton(sf::RenderWindow& render_window, sf::Event& window_event);
 
 		void eventButtonHovered();
 		void eventButtonClicked();
