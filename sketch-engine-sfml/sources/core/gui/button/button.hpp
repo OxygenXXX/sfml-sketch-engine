@@ -19,7 +19,7 @@ namespace sketch::gui
 		virtual void buttonStateHovered();
 		virtual void buttonStateClicked();
 
-		void pollButtonEvents(Event& wnd_event, Application::InputManager& wnd_inputs);
+		void pollButtonEvents(Application& wnd_app, Event& wnd_event);
 
 		void displayButton();
 

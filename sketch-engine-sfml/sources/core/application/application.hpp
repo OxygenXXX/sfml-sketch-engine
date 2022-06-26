@@ -11,10 +11,10 @@ namespace sketch
 	{
 		public:
 
-		struct InputManager
-		{
+		MouseController* mouse_controller;
+		KeyboardController* keyboard_controller;
 
-		};
+		sf::RenderWindow* window_controller;
 
 		private:
 

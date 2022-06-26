@@ -2,9 +2,19 @@
 
 namespace sketch::gui
 {
-	void Button::pollButtonEvents()
+	void Button::pollButtonEvents(Application& wnd_app, Event& wnd_event)
 	{
+		if (wnd_event.type == sf::Event::MouseMoved)
+		{
+			sf::Vector2f mouse_coords = wnd_app.mouse_controller.getMousePosition(wnd_app.window_controller);
 
+			float mouse_xpos = 
+
+			float button_xpos_min = this->button_shape.getPosition().x;
+			float button_ypos_min = this->button_shape.getPosition().x;
+
+
+		}
 	}
 
 
