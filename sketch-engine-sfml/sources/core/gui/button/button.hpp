@@ -23,6 +23,7 @@ namespace sketch::gui
 		virtual void eventButtonClicked();
 
 		void pollButtonEvents();
+
 		void displayButton();
 
 		/*
