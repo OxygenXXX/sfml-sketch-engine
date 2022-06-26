@@ -2,6 +2,8 @@
 
 namespace sketch::gui
 {
+	/*
+	
 	Button::Button(Vector2f btn_size, string btn_text, Color bg_color, Color fg_color)
 	{
 		this->button_text.setString(btn_text);
@@ -11,6 +13,18 @@ namespace sketch::gui
 		this->button_shape.setFillColor(bg_color);
 
 		this->current_button_state = Button::Normal;
+	}
+
+
+	void Button::pollButtonEvents(sf::RenderWindow& render_window, sf::Event& window_event)
+	{
+		if (window_event.type == sf::Event::MouseMoved)
+		{
+			if (this->isButtonHovered(render_window))
+			{
+
+			}
+		}
 	}
 
 	void Button::setTextColor(const sf::Color fg_color, uint8_t btn_state)
@@ -174,4 +188,6 @@ namespace sketch::gui
 
 		return false;
 	}
+
+	*/
 }

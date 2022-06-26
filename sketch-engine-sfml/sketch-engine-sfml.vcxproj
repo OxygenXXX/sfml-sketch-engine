@@ -19,16 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="sources\core\application\resources\manager\manager.cpp" />
     <ClCompile Include="sources\core\application\application.cpp" />
     <ClCompile Include="sources\core\gui\button\button.cpp" />
     <ClCompile Include="sources\main.cpp" />
     <ClCompile Include="sources\core\gui\textbox\textbox.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="sources\core\application\resources\manager\manager.hpp" />
     <ClInclude Include="sources\core\application\application.hpp" />
-    <ClInclude Include="sources\core\application\resources\resources.hpp" />
     <ClInclude Include="sources\core\gui\button\button.hpp" />
     <ClInclude Include="sources\core\gui\elements.hpp" />
     <ClInclude Include="sources\core\gui\textbox\textbox.hpp" />

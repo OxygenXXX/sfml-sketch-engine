@@ -17,14 +17,18 @@ namespace sketch::gui
 	{
 		public:
 
-		enum
-		{
-			Normal = 0,
-			Hovered = 1,
-			Clicked = 2,
-		};
+		Button(Vector2f btn_size, string btn_text);
 
-		Button(Vector2f btn_size, string btn_text, Color bg_color, Color fg_color);
+		virtual void eventButtonHovered();
+		virtual void eventButtonClicked();
+
+		void pollButtonEvents();
+		void displayButton();
+
+		/*
+
+		void pollButtonEvents(sf::RenderWindow& render_window, sf::Event& window_event);
+		void displayButton(sf::RenderWindow& render_window);
 
 		void setTextFont(const sf::Font& btn_font);
 
@@ -45,6 +49,8 @@ namespace sketch::gui
 
 		void eventButtonHovered();
 		void eventButtonClicked();
+
+		*/
 
 		private:
 
