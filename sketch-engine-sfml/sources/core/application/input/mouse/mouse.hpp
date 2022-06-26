@@ -4,6 +4,11 @@ namespace sketch::input
 {
 	class MouseController
 	{
+		public:
+
+
+		private:
+
 
 	};
 }

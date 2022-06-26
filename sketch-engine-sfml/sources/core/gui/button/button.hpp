@@ -19,8 +19,9 @@ namespace sketch::gui
 
 		Button(Vector2f btn_size, string btn_text);
 
-		virtual void eventButtonHovered();
-		virtual void eventButtonClicked();
+		virtual void buttonStateNormal();
+		virtual void buttonStateHovered();
+		virtual void buttonStateClicked();
 
 		void pollButtonEvents();
 
@@ -66,11 +67,10 @@ namespace sketch::gui
 		sf::Color font_color_clicked;
 
 		sf::Color shape_border_color;
-		sf::Color font_shadow_color;
 
-		uint8_t current_button_state = 0;
 
-		sf::Text button_text;
+
+		sf::Text button_container_text;
 
 	};
 }
