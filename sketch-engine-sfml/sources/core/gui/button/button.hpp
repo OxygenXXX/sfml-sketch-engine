@@ -1,15 +1,13 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
+#include <SFML/Window.hpp>
 
 #include <string>
 
-using sf::Vector2f;
+#include "core/application/application.hpp"
 
-using sf::Color;
-using sf::Font;
-
-using std::string;
+using sf::Event;
 
 namespace sketch::gui
 {
@@ -17,17 +15,17 @@ namespace sketch::gui
 	{
 		public:
 
-		Button(Vector2f btn_size, string btn_text);
-
 		virtual void buttonStateNormal();
 		virtual void buttonStateHovered();
 		virtual void buttonStateClicked();
 
-		void pollButtonEvents();
+		void pollButtonEvents(Event& wnd_event, Application::InputManager& wnd_inputs);
 
 		void displayButton();
 
 		/*
+		
+		Button(Vector2f btn_size, string btn_text);
 
 		void pollButtonEvents(sf::RenderWindow& render_window, sf::Event& window_event);
 		void displayButton(sf::RenderWindow& render_window);

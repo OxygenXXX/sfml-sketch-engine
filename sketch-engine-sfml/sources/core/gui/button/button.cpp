@@ -2,6 +2,12 @@
 
 namespace sketch::gui
 {
+	void Button::pollButtonEvents()
+	{
+
+	}
+
+
 	/*
 	
 	Button::Button(Vector2f btn_size, string btn_text, Color bg_color, Color fg_color)
