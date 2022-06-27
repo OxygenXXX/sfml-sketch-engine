@@ -6,14 +6,15 @@ namespace sketch::gui
 	{
 		if (wnd_event.type == sf::Event::MouseMoved)
 		{
-			sf::Vector2f mouse_coords = wnd_app.mouse_controller.getMousePosition(wnd_app.window_controller);
+			//
+		}
 
-			float mouse_xpos = 
-
-			float button_xpos_min = this->button_shape.getPosition().x;
-			float button_ypos_min = this->button_shape.getPosition().x;
-
-
+		if (wnd_event.type == sf::Event::MouseButtonPressed)
+		{
+			if (wnd_event.mouseButton.button == sf::Mouse::Left)
+			{
+				//
+			}
 		}
 	}
 

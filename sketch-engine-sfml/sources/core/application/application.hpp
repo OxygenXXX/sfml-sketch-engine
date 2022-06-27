@@ -11,13 +11,11 @@ namespace sketch
 	{
 		public:
 
-		MouseController* mouse_controller;
-		KeyboardController* keyboard_controller;
 
-		sf::RenderWindow* window_controller;
 
 		private:
 
+		sf::RenderWindow* window_controller;
 
 	};
 }
