@@ -18,7 +18,7 @@ namespace sketch::gui
 		sf::Color button_color_clicked;
 
 		sf::Color font_color_normal;
-		sf::Color font_color_hovered;
+		sf::Color font_color_norm;
 		sf::Color font_color_clicked;
 	};
 }
