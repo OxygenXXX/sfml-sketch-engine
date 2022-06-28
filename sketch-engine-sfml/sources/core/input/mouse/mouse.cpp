@@ -11,13 +11,12 @@ namespace sketch::input
 
 			sf::IntRect temp_rect(sprite_pos.x, sprite_pos.y, sprite_bounds.x, sprite_bounds.y);
 
-			if (temp_rect.contains(sf::Mouse::getPosition(wnd_app)))
-			{
-				return true;
-			}
+			if (temp_rect.contains(this->getMouseCoords(wnd_app))) return true;
 
 			return false;
 		}
+
+		return false;
 	}
 
 	sf::Vector2i InputManager::getMouseCoords(sf::RenderWindow& wnd_app)

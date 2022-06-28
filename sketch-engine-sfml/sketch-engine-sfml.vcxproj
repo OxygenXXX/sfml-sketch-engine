@@ -19,15 +19,22 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="sources\core\application\application.cpp" />
+    <ClCompile Include="sources\core\input\manager\manager.cpp" />
+    <ClCompile Include="sources\core\input\mouse\mouse.cpp" />
+    <ClCompile Include="sources\core\resources\fonts.cpp" />
+    <ClCompile Include="sources\core\resources\manager\manager.cpp" />
     <ClCompile Include="sources\core\gui\button\button.cpp" />
+    <ClCompile Include="sources\core\resources\textures.cpp" />
     <ClCompile Include="sources\main.cpp" />
     <ClCompile Include="sources\core\gui\textbox\textbox.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="sources\core\application\application.hpp" />
+    <ClInclude Include="sources\core\input\manager\manager.hpp" />
+    <ClInclude Include="sources\core\input\input.hpp" />
+    <ClInclude Include="sources\core\resources\manager\manager.hpp" />
     <ClInclude Include="sources\core\gui\button\button.hpp" />
     <ClInclude Include="sources\core\gui\elements.hpp" />
+    <ClInclude Include="sources\core\resources\resources.hpp" />
     <ClInclude Include="sources\core\gui\textbox\textbox.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -108,7 +115,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\Local Projects\sketch-engine-sfml\sketch-engine-sfml\libraries\sfml-windows-vc15-32bit\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Local Projects\sketch-engine-sfml\sketch-engine-sfml\libraries\sfml-windows-vc15-32bit\include;%(AdditionalIncludeDirectories);D:\Local Projects\sketch-engine-sfml\sketch-engine-sfml\sources</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -126,7 +133,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\Local Projects\sketch-engine-sfml\sketch-engine-sfml\libraries\sfml-windows-vc15-32bit\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Local Projects\sketch-engine-sfml\sketch-engine-sfml\libraries\sfml-windows-vc15-32bit\include;%(AdditionalIncludeDirectories);D:\Local Projects\sketch-engine-sfml\sketch-engine-sfml\sources</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -144,7 +151,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\Local Projects\sketch-engine-sfml\sketch-engine-sfml\libraries\sfml-windows-vc15-64bit\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Local Projects\sketch-engine-sfml\sketch-engine-sfml\libraries\sfml-windows-vc15-64bit\include;%(AdditionalIncludeDirectories);D:\Local Projects\sketch-engine-sfml\sketch-engine-sfml\sources</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -162,7 +169,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\Local Projects\sketch-engine-sfml\sketch-engine-sfml\libraries\sfml-windows-vc15-64bit\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Local Projects\sketch-engine-sfml\sketch-engine-sfml\libraries\sfml-windows-vc15-64bit\include;%(AdditionalIncludeDirectories);D:\Local Projects\sketch-engine-sfml\sketch-engine-sfml\sources</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
